@@ -4,583 +4,373 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glenn Carlo Baquero – Senior Backend Engineer</title>
+    <title>Glenn Carlo Baquero – Backend Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="text-gray-100">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 nav-blur border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="text-2xl font-bold">
-                    <span class="text-gradient">GB</span>
-                </div>
-                <div class="hidden md:flex space-x-10">
-                    <a href="#home"
-                        class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Home</a>
-                    <a href="#expertise"
-                        class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Expertise</a>
-                    <a href="#experience"
-                        class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Experience</a>
-                    <a href="#projects"
-                        class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Projects</a>
-                    <a href="#contact"
-                        class="text-gray-300 hover:text-white transition-colors text-sm font-medium">Contact</a>
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+            <span class="font-semibold text-lg">GB</span>
+            <div class="hidden md:flex gap-8 text-sm">
+                <a href="#about" class="nav-link text-gray-400 hover:text-white">About</a>
+                <a href="#work" class="nav-link text-gray-400 hover:text-white">Work</a>
+                <a href="#projects" class="nav-link text-gray-400 hover:text-white">Projects</a>
+                <a href="#contact" class="nav-link text-gray-400 hover:text-white">Contact</a>
             </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
-            <a href="#home" class="block py-2 text-gray-300 hover:text-white">Home</a>
-            <a href="#expertise" class="block py-2 text-gray-300 hover:text-white">Expertise</a>
-            <a href="#experience" class="block py-2 text-gray-300 hover:text-white">Experience</a>
-            <a href="#projects" class="block py-2 text-gray-300 hover:text-white">Projects</a>
-            <a href="#contact" class="block py-2 text-gray-300 hover:text-white">Contact</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[150px]"></div>
-        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-[150px]"></div>
-
-        <div class="max-w-6xl mx-auto text-center relative z-10">
-            <div class="mb-8 float-animation">
-                <div
-                    class="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 p-1 glow-border">
-                    <img src="./resources/590228575_1216845540508407_7478651334306621550_n.jpg"
-                        alt="Glenn Carlo Baquero" class="w-full h-full rounded-full object-cover">
-                </div>
+    <section id="about" class="pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-8">
+                <h1 class="text-5xl md:text-6xl font-bold mb-3 tracking-tight">
+                    Glenn Carlo Baquero
+                </h1>
+                <p class="text-xl text-gray-400 mb-6">Backend Developer</p>
             </div>
 
-            <h1 class="text-5xl md:text-7xl font-bold mb-6">
-                <span class="text-gradient">Glenn Carlo Baquero</span>
-            </h1>
-
-            <p class="text-2xl md:text-3xl text-gray-300 mb-4 font-light">Senior Backend Developer</p>
-
-            <p class="text-lg text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Senior Backend Developer with 7+ years of experience specializing in Laravel, RESTful APIs, database optimization, and payment integrations. Proven track record of
-                building scalable, secure systems used by thousands of users. Strong backend focus with hands-on experience developing admin dashboards using Vue, React and Next.js.
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-3 mb-10">
-                <span class="tech-badge px-5 py-2 rounded-full bg-white/5 text-sm">PHP/Laravel</span>
-                <span class="tech-badge px-5 py-2 rounded-full bg-white/5 text-sm">System Architecture</span>
-                <span class="tech-badge px-5 py-2 rounded-full bg-white/5 text-sm">API Design</span>
-                <span class="tech-badge px-5 py-2 rounded-full bg-white/5 text-sm">Vue/React</span>
-                <span class="tech-badge px-5 py-2 rounded-full bg-white/5 text-sm">Docker/DevOps</span>
-                <span class="tech-badge px-5 py-2 rounded-full bg-white/5 text-sm">Performance Tuning</span>
+            <div class="max-w-2xl mb-8 space-y-4 text-gray-300 leading-relaxed">
+                <p>
+                    I build backends that actually work. After 7+ years writing PHP and Laravel, I've learned that good
+                    code
+                    isn't just about patterns and principles—it's about shipping features that don't break at 3am.
+                </p>
+                <p>
+                    Most of my time is spent designing APIs, optimizing database queries, and integrating payment
+                    systems.
+                    I've wired up everything from PayPal to ACH/NACHA processing, built real-time messaging with Pusher,
+                    and even handled video streaming with Ant Media.
+                </p>
+                <p>
+                    These days I'm focused on system architecture and performance tuning. If it involves making servers
+                    respond faster or handling more traffic without falling over, I'm probably interested.
+                </p>
             </div>
 
-            <div class="flex justify-center gap-5">
+            <div class="flex gap-5 mb-8">
                 <a href="https://github.com/glennbaquero" target="_blank"
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 hover:bg-purple-600 transition-all">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                    </svg>
-                </a>
+                    class="text-gray-400 hover:text-white">GitHub</a>
                 <a href="https://www.linkedin.com/in/glenn-carlo-baquero-a5b440130/" target="_blank"
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 hover:bg-purple-600 transition-all">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg>
-                </a>
-                <a href="mailto:baqueroglenncarlo@gmail.com"
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 hover:bg-purple-600 transition-all">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                </a>
+                    class="text-gray-400 hover:text-white">LinkedIn</a>
+                <a href="mailto:baqueroglenncarlo@gmail.com" class="text-gray-400 hover:text-white">Email</a>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+                <span class="skill-tag px-3 py-1.5 rounded text-sm text-gray-300">PHP/Laravel</span>
+                <span class="skill-tag px-3 py-1.5 rounded text-sm text-gray-300">Livewire</span>
+                <span class="skill-tag px-3 py-1.5 rounded text-sm text-gray-300">Alphine.js</span>
+                <span class="skill-tag px-3 py-1.5 rounded text-sm text-gray-300">API Design</span>
+                <span class="skill-tag px-3 py-1.5 rounded text-sm text-gray-300">Vue/React</span>
+                <span class="skill-tag px-3 py-1.5 rounded text-sm text-gray-300">Docker</span>
+                <span class="skill-tag px-3 py-1.5 rounded text-sm text-gray-300">Third Party API Integration</span>
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="py-24 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 relative inline-block section-title">
-                Core Expertise
-            </h2>
-            <p class="text-gray-400 mb-16 text-lg">Senior-level technical capabilities and specializations</p>
+    <section id="work" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto section-offset">
+            <h2 class="text-3xl font-bold mb-12">Work</h2>
 
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <div class="metric-card p-8 rounded-2xl card-hover">
-                    <div class="text-5xl font-bold text-gradient mb-3">7+</div>
-                    <div class="text-gray-400 text-lg">Years of Experience</div>
-                </div>
-                <div class="metric-card p-8 rounded-2xl card-hover">
-                    <div class="text-5xl font-bold text-gradient mb-3">20+</div>
-                    <div class="text-gray-400 text-lg">Projects Delivered</div>
-                </div>
-                <div class="metric-card p-8 rounded-2xl card-hover">
-                    <div class="text-5xl font-bold text-gradient mb-3">6</div>
-                    <div class="text-gray-400 text-lg">Payment Gateways Integrated</div>
-                </div>
-            </div>
+            <div class="relative pl-8">
+                <div class="timeline-line"></div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 card-hover">
-                    <h3 class="text-2xl font-bold mb-4 text-gradient">Backend Architecture</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>RESTful API design</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Microservices architecture and service orchestration</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Database optimization and query performance tuning</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Caching strategies with Redis</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 card-hover">
-                    <h3 class="text-2xl font-bold mb-4 text-gradient">Technical Leadership</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Code review and mentoring junior developers</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Technical documentation and best practices</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>CI/CD pipeline implementation and automation</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Security best practices and vulnerability assessment</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 card-hover">
-                    <h3 class="text-2xl font-bold mb-4 text-gradient">Technology Stack</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>PHP (Native & MVC), Laravel Framework</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>JavaScript, Vue.js, React, Livewire, Alpine.js</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>HTML5, CSS3, Bootstrap, TailwindCSS</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>MySQL, Database optimization, Complex queries</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Git, Linux, Docker, DigitalOcean deployments</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 card-hover">
-                    <h3 class="text-2xl font-bold mb-4 text-gradient">Specialized Skills</h3>
-                    <ul class="space-y-3 text-gray-300">
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>WordPress/WooCommerce plugin development</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Payment Integrations: PayPal, iPay88, Paynamics, PayMaya, AuthorizeNet,
-                                ACH/NACHA</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Real-time messaging with Pusher</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Video streaming with Ant Media</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Mobile Development: Cordova (Android/iOS)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-3">▹</span>
-                            <span>Test-driven development: Pest PHP, PHPUnit</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="py-24 px-6 bg-white/[0.02]">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 relative inline-block section-title">
-                Professional Highlights
-            </h2>
-            <p class="text-gray-400 mb-16 text-lg">Key achievements and impact delivered</p>
-
-            <div class="space-y-8">
-                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 card-hover">
-                    <div class="flex items-start justify-between mb-4 flex-wrap gap-2">
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">Backend Developer</h3>
-                            <p class="text-purple-400">Qux Technology Inc.</p>
-                        </div>
-                        <span class="text-gray-400 text-sm">May 2022 – December 2025</span>
+                <!-- Qux Technology -->
+                <div class="mb-16 relative">
+                    <div class="mb-3">
+                        <h3 class="text-xl font-semibold">Backend Developer</h3>
+                        <p class="text-purple-400">Qux Technology Inc.</p>
+                        <p class="text-sm text-gray-500">May 2022 – Dec 2025</p>
                     </div>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Served as a key contributor in backend architecture, database integration, and API design. Led
-                        development of the Admin frontend and mission-critical API integrations. Drove major system
-                        improvements through targeted bug fixes, refactoring, and feature enhancements.
+                    <div class="text-gray-300 space-y-3 mt-4">
+                        <p>Built the admin frontend from scratch using React/Next.js and wired it to our Laravel
+                            backend. Also handled most of the payment integration work—ACH/NACHA processing was
+                            particularly fun to figure out.</p>
+                        <p>Spent a lot of time optimizing queries and refactoring old code. Added Pusher for real-time
+                            messaging and integrated Ant Media for video streaming. The usual mix of new features and
+                            fixing things that needed fixing.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Laravel</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">React/Next.js</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Payment
+                            Integration</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Video Streaming</span>
+                    </div>
+                </div>
+
+                <!-- Ameax -->
+                <div class="mb-16 relative">
+                    <div class="mb-3">
+                        <h3 class="text-xl font-semibold">Web Developer</h3>
+                        <p class="text-purple-400">Ameax</p>
+                        <p class="text-sm text-gray-500">May – Sep 2022</p>
+                    </div>
+                    <div class="text-gray-300 space-y-3 mt-4">
+                        <p>Full-stack work on e-commerce products using the TALL stack (Tailwind, Alpine.js, Laravel,
+                            Livewire). Integrated payment APIs, built checkout flows, and worked on homepage redesigns.
+                            Got exposed to Pest for testing and did a fair amount of pair programming.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Laravel</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Livewire</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Alpine.js</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Tailwind</span>
+                    </div>
+                </div>
+
+                <!-- FusedSoftware -->
+                <div class="mb-16 relative">
+                    <div class="mb-3">
+                        <h3 class="text-xl font-semibold">Web Developer</h3>
+                        <p class="text-purple-400">FusedSoftware</p>
+                        <p class="text-sm text-gray-500">Sep 2021 – Apr 2022</p>
+                    </div>
+                    <div class="text-gray-300 space-y-3 mt-4">
+                        <p>Maintained Laravel applications for various clients. Did bug fixes, query optimization, and
+                            integrated third-party APIs like Klaviyo and Eway. Worked with AngularJS on the
+                            frontend—first time touching that framework in a while.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Laravel</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">AngularJS</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">API Integration</span>
+                    </div>
+                </div>
+
+                <!-- Diversified Robotics -->
+                <div class="mb-16 relative">
+                    <div class="mb-3">
+                        <h3 class="text-xl font-semibold">Web Developer (Full-Stack)</h3>
+                        <p class="text-purple-400">Diversified Robotics</p>
+                        <p class="text-sm text-gray-500">Mar – Jul 2021</p>
+                    </div>
+                    <div class="text-gray-300 space-y-3 mt-4">
+                        <p>Solo developer on the LR Transport system—a bus reservation platform. Handled everything from
+                            database design to frontend UI. Built seat allocation features, trip scheduling, and
+                            integrated Authorize.Net for payments. First real exposure to Tailwind, which I ended up
+                            liking a lot.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Laravel</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Vue.js</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Tailwind</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Payment
+                            Integration</span>
+                    </div>
+                </div>
+
+                <!-- SoftBir -->
+                <div class="mb-16 relative">
+                    <div class="mb-3">
+                        <h3 class="text-xl font-semibold">Web Developer (Full-Stack)</h3>
+                        <p class="text-purple-400">SoftBir</p>
+                        <p class="text-sm text-gray-500">Nov 2020 – Aug 2021</p>
+                    </div>
+                    <div class="text-gray-300 space-y-3 mt-4">
+                        <p>Another solo gig building an accounting system from the ground up. Laravel backend with
+                            Vue.js frontend. Designed the database, built RESTful APIs, and handled all the report
+                            generation and export features. Worked directly with the client throughout.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Laravel</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Vue.js</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Bootstrap</span>
+                    </div>
+                </div>
+                <!-- Praxxys -->
+                <div class="mb-16 relative">
+                    <div class="mb-3">
+                        <h3 class="text-xl font-semibold">Web Developer / Mobile Developer</h3>
+                        <p class="text-purple-400">Praxxys Solutions Inc.</p>
+                        <p class="text-sm text-gray-500">Aug 2018 – Nov 2020</p>
+                    </div>
+                    <div class="text-gray-300 space-y-3 mt-4">
+                        <p>Worked on a bunch of client projects—everything from e-commerce platforms to healthcare apps.
+                            Built payment integrations (PayPal, iPay88, Paynamics), wired up booking systems, and
+                            handled the full stack from database design to mobile deployment.</p>
+                        <p>Got really comfortable with Cordova during this time—shipped multiple apps to both app
+                            stores. Also did a lot of work with calendar integrations, in-app notifications, and video
+                            calling with WebRTC. Ended up leading some projects and mentoring new developers.</p>
+                        <p>Notable projects: Masungi Georeserve booking platform, Trinity healthcare suite (3 mobile
+                            apps + web platform), Dormiko property management, and several e-commerce sites with
+                            cart/checkout flows.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Laravel</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Vue.js</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Cordova</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Payment Gateways</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">Mobile Apps</span>
+                        <span class="text-xs px-2 py-1 bg-purple-500/10 text-purple-300 rounded">WebRTC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-10 px-6">
+        <div class="max-w-4xl mx-auto section-offset">
+            <h2 class="text-3xl font-bold mb-12">Things I've Built</h2>
+
+            <div class="space-y-6">
+                <!-- Qux Admin -->
+                <div class="project-card border border-white/10 rounded-lg p-6 bg-white/[0.02]">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">Qux Admin Dashboard</h3>
+                        <a href="https://github.com/glennbaquero/qux-admin" target="_blank"
+                            class="text-sm text-gray-400 hover:text-purple-400">GitHub →</a>
+                    </div>
+                    <p class="text-gray-300 mb-3">
+                        Component-driven admin dashboard built with React, Next.js, and Chakra UI. Demonstrates scalable
+                        frontend architecture with reusable UI patterns and responsive design.
                     </p>
-                    <ul class="space-y-2 text-gray-300 mb-4">
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-2">•</span>
-                            <span>Optimized complex queries and database processes to significantly improve performance
-                                and scalability</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-2">•</span>
-                            <span>Implemented ACH/NACHA payment processing and strengthened transaction workflows</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-2">•</span>
-                            <span>Integrated real-time messaging capabilities using Pusher and enhanced application
-                                security</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-2">•</span>
-                            <span>Implemented Ant Media for live and on-demand video streaming</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-2">•</span>
-                            <span>Built and maintained company-wide PHP and WordPress plugins used across multiple
-                                products</span>
-                        </li>
-                    </ul>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Laravel</span>
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">API Design</span>
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Payment Integration</span>
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Video Streaming</span>
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">React.js</span>
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Next.js</span>
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">ChakraUI</span>
+                    <div class="flex gap-2 text-xs text-gray-400">
+                        <span>React.js</span>
+                        <span>•</span>
+                        <span>Next.js</span>
+                        <span>•</span>
+                        <span>ChakraUI</span>
                     </div>
                 </div>
 
-                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 card-hover">
-                    <div class="flex items-start justify-between mb-4 flex-wrap gap-2">
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">Web Developer</h3>
-                            <p class="text-purple-400">Praxxys Solution, Inc.</p>
-                        </div>
-                        <span class="text-gray-400 text-sm">August 2018 – November 2020</span>
-                    </div>
-                    <p class="text-gray-300 mb-4 leading-relaxed">
-                        Delivered end-to-end development across backend systems and mobile applications. Collaborated
-                        with stakeholders to gather requirements and translate business needs into actionable technical
-                        specifications.
-                    </p>
-                    <ul class="space-y-2 text-gray-300 mb-4">
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-2">•</span>
-                            <span>Designed, developed, and managed database structures for efficient and reliable data
-                                operations</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-2">•</span>
-                            <span>Integrated third-party APIs to extend application capabilities</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-2">•</span>
-                            <span>Deployed mobile applications to Google Play Store and Apple App Store</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-purple-500 mr-2">•</span>
-                            <span>Managed web application deployments using DigitalOcean</span>
-                        </li>
-                    </ul>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">PHP</span>
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Laravel</span>
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Vue.js</span>
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Bootstrap</span>
-                        <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Mobile Development</span>
-                        <span
-                            class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">DigitalOcean</span>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 card-hover">
-                        <div class="flex items-start justify-between mb-3 flex-wrap gap-2">
-                            <div>
-                                <h3 class="text-xl font-bold mb-1">Web Developer</h3>
-                                <p class="text-purple-400 text-sm">Ameax</p>
-                            </div>
-                            <span class="text-gray-400 text-xs">May – Sep 2022</span>
-                        </div>
-                        <p class="text-gray-300 text-sm mb-3 leading-relaxed">
-                            Supported full-stack development across multiple product modules with continuous
-                            enhancements and optimizations.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Laravel</span>
-                            <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Vue.js</span>
-                            <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Tailwind</span>
-                        </div> 
-                    </div>
-
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10 card-hover">
-                        <div class="flex items-start justify-between mb-3 flex-wrap gap-2">
-                            <div>
-                                <h3 class="text-xl font-bold mb-1">Web Developer</h3>
-                                <p class="text-purple-400 text-sm">FusedSoftware</p>
-                            </div>
-                            <span class="text-gray-400 text-xs">Sep 2021 – Apr 2022</span>
-                        </div>
-                        <p class="text-gray-300 text-sm mb-3 leading-relaxed">
-                            Full-stack development support, maintaining and optimizing Laravel applications to meet
-                            evolving client needs.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Laravel</span>
-                            <span
-                                class="px-2 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Full-Stack</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-24 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 relative inline-block section-title">
-                Featured Projects
-            </h2>
-            <p class="text-gray-400 mb-16 text-lg"></p>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- QuxPay PHP Plugin -->
-                <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden card-hover glow-border">
-                    <div class="p-6 bg-gradient-to-br from-purple-600/20 to-indigo-600/20">
-                        <h3 class="text-2xl font-bold mb-2">QuxPay PHP SDK</h3>
-                        <p class="text-purple-300 text-sm">Payment Gateway Integration Library</p>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-300 mb-4 leading-relaxed">
-                            Enterprise-grade payment integration library for PHP and Laravel applications. Features
-                            builder-pattern API, comprehensive error handling, and secure transaction processing for
-                            seamless payment gateway integration.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">PHP
-                                8.2+</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Laravel
-                                10+</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Unit
-                                Testing</span>
-                        </div>
+                <!-- QuxPay -->
+                <div class="project-card border border-white/10 rounded-lg p-6 bg-white/[0.02]">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">QuxPay PHP SDK</h3>
                         <a href="https://github.com/glennbaquero/quxpay-php" target="_blank"
-                            class="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors">
-                            View on GitHub →
-                        </a>
+                            class="text-sm text-gray-400 hover:text-purple-400">GitHub →</a>
+                    </div>
+                    <p class="text-gray-300 mb-3">
+                        Payment integration library with a builder-pattern API. Made it easier to process transactions
+                        without writing the same boilerplate over and over.
+                    </p>
+                    <div class="flex gap-2 text-xs text-gray-400">
+                        <span>PHP 8.2+</span>
+                        <span>•</span>
+                        <span>Laravel 10+</span>
+                        <span>•</span>
+                        <span>Unit Testing</span>
                     </div>
                 </div>
 
                 <!-- Qux API -->
-                <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden card-hover glow-border">
-                    <div class="p-6 bg-gradient-to-br from-purple-600/20 to-indigo-600/20">
-                        <h3 class="text-2xl font-bold mb-2">Qux API Platform</h3>
-                        <p class="text-purple-300 text-sm">Containerized Laravel Backend</p>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-300 mb-4 leading-relaxed">
-                            Production-ready API foundation with Docker containerization, authentication scaffolding,
-                            and workflow automation. Designed for scalability and modern DevOps practices.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Laravel</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Docker</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">RESTful
-                                API</span>
-                        </div>
+                <div class="project-card border border-white/10 rounded-lg p-6 bg-white/[0.02]">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">Qux API Platform</h3>
                         <a href="https://github.com/glennbaquero/qux" target="_blank"
-                            class="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors">
-                            View on GitHub →
-                        </a>
+                            class="text-sm text-gray-400 hover:text-purple-400">GitHub →</a>
                     </div>
-                </div>
-                
-                <!-- Qux Admin -->
-                <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden card-hover glow-border">
-                    <div class="p-6 bg-gradient-to-br from-purple-600/20 to-indigo-600/20">
-                        <h3 class="text-2xl font-bold mb-2">Qux Admin Dashboard</h3>
-                        <p class="text-purple-300 text-sm">Modern React Admin Interface</p>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-300 mb-4 leading-relaxed">
-                            Component-driven admin dashboard built with React, Next.js, and Chakra UI. Demonstrates
-                            scalable frontend architecture with reusable UI patterns and responsive design.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">React</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Next.js</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Chakra
-                                UI</span>
-                        </div>
-                        <a href="https://github.com/glennbaquero/qux-admin" target="_blank"
-                            class="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors">
-                            View on GitHub →
-                        </a>
+                    <p class="text-gray-300 mb-3">
+                        Containerized Laravel backend template. Set up with Docker, authentication scaffolding,
+                        and some CI/CD workflows to get projects started faster.
+                    </p>
+                    <div class="flex gap-2 text-xs text-gray-400">
+                        <span>Laravel</span>
+                        <span>•</span>
+                        <span>Docker</span>
+                        <span>•</span>
+                        <span>RESTful API</span>
                     </div>
                 </div>
 
                 <!-- LRTransport -->
-                <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden card-hover glow-border">
-                    <div class="p-6 bg-gradient-to-br from-purple-600/20 to-indigo-600/20">
-                        <h3 class="text-2xl font-bold mb-2">LRTransport System</h3>
-                        <p class="text-purple-300 text-sm">Bus Reservation Management Platform</p>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-300 mb-4 leading-relaxed">
-                            Full-featured transportation management system with real-time seat allocation, trip
-                            scheduling, and passenger booking. Handles complex fleet operations with interactive seat
-                            mapping.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Laravel</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Vue.js</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">MySQL</span>
-                        </div>
-                        <div class="space-y-2">
+                <div class="project-card border border-white/10 rounded-lg p-6 bg-white/[0.02]">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">LRTransport System</h3>
+                        <div class="flex gap-3 text-sm text-gray-400">
                             <a href="https://lrtransport.diversifiedrobotic.com/travel" target="_blank"
-                                class="block text-purple-400 hover:text-purple-300 transition-colors">
-                                Live Demo →
-                            </a>
+                                class="hover:text-purple-400">Demo →</a>
                             <a href="https://github.com/glennbaquero/l-r" target="_blank"
-                                class="block text-purple-400 hover:text-purple-300 transition-colors">
-                                View on GitHub →
-                            </a>
+                                class="hover:text-purple-400">Code
+                                →</a>
                         </div>
+                    </div>
+                    <p class="text-gray-300 mb-3">
+                        Bus reservation platform with real-time seat allocation. Handles trip scheduling,
+                        passenger booking, and fleet management.
+                    </p>
+                    <div class="flex gap-2 text-xs text-gray-400">
+                        <span>Laravel</span>
+                        <span>•</span>
+                        <span>Vue.js</span>
+                        <span>•</span>
+                        <span>TailwindCSS</span>
+                        <span>•</span>
+                        <span>Payment System</span>
                     </div>
                 </div>
 
-                <!-- Masungi Georeserve -->
-                <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden card-hover glow-border">
-                    <div class="p-6 bg-gradient-to-br from-purple-600/20 to-indigo-600/20">
-                        <h3 class="text-2xl font-bold mb-2">Masungi Georeserve</h3>
-                        <p class="text-purple-300 text-sm">Eco-Tourism Platform</p>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-300 mb-4 leading-relaxed">
-                            Full-stack eco-tourism platform with content management, visitor booking system, and
-                            interactive experiences. Built to showcase conservation efforts and manage high-traffic
-                            visitor engagement.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Laravel</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Vue.js</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">MySQL</span>
-                        </div>
-                        <div class="space-y-2">
-                            <a href="https://masungigeoreserve.com/" target="_blank"
-                                class="block text-purple-400 hover:text-purple-300 transition-colors">
-                                Live Site →
-                            </a>
+                <!-- Masungi -->
+                <div class="project-card border border-white/10 rounded-lg p-6 bg-white/[0.02]">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">Masungi Georeserve</h3>
+                        <div class="flex gap-3 text-sm text-gray-400">
+                            <a href="https://masungigeoreserve.com/" target="_blank" class="hover:text-purple-400">Live
+                                →</a>
                             <a href="https://github.com/glennbaquero/masungi" target="_blank"
-                                class="block text-purple-400 hover:text-purple-300 transition-colors">
-                                View on GitHub →
-                            </a>
+                                class="hover:text-purple-400">Code →</a>
                         </div>
+                    </div>
+                    <p class="text-gray-300 mb-3">
+                        Eco-tourism platform with CMS, booking system, and visitor management.
+                        Built to handle high traffic during peak seasons.
+                    </p>
+                    <div class="flex gap-2 text-xs text-gray-400">
+                        <span>Laravel</span>
+                        <span>•</span>
+                        <span>Vue.js</span>
+                        <span>•</span>
+                        <span>Content Management</span>
+                        <span>•</span>
+                        <span>Payment System</span>
                     </div>
                 </div>
 
                 <!-- Dormiko -->
-                <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden card-hover glow-border">
-                    <div class="p-6 bg-gradient-to-br from-purple-600/20 to-indigo-600/20">
-                        <h3 class="text-2xl font-bold mb-2">Dormiko Platform</h3>
-                        <p class="text-purple-300 text-sm">Dormitory Management System</p>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-gray-300 mb-4 leading-relaxed">
-                            Comprehensive property management platform for dormitories and rental housing. Features
-                            tenant management, occupancy tracking, payment processing, and automated billing systems.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Laravel</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">Vue.js</span>
-                            <span class="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full">MySQL</span>
-                        </div>
-                        <div class="space-y-2">
-                            <a href="https://dormiko.ph/" target="_blank"
-                                class="block text-purple-400 hover:text-purple-300 transition-colors">
-                                Live Site →
-                            </a>
+                <div class="project-card border border-white/10 rounded-lg p-6 bg-white/[0.02]">
+                    <div class="flex justify-between items-start mb-3">
+                        <h3 class="text-xl font-semibold">Dormiko Platform</h3>
+                        <div class="flex gap-3 text-sm text-gray-400">
+                            <a href="https://dormiko.ph/" target="_blank" class="hover:text-purple-400">Live →</a>
                             <a href="https://github.com/glennbaquero/dormiko" target="_blank"
-                                class="block text-purple-400 hover:text-purple-300 transition-colors">
-                                View on GitHub →
-                            </a>
+                                class="hover:text-purple-400">Code →</a>
                         </div>
+                    </div>
+                    <p class="text-gray-300 mb-3">
+                        Property management system for dormitories. Tenant management, payment processing,
+                        and automated billing.
+                    </p>
+                    <div class="flex gap-2 text-xs text-gray-400">
+                        <span>Laravel</span>
+                        <span>•</span>
+                        <span>Vue.js</span>
+                        <span>•</span>
+                        <span>Content Management</span>
+                        <span>•</span>
+                        <span>Payment System</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 px-6 bg-white/[0.02]">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 relative inline-block section-title">
-                Let's Build Something Great
-            </h2>
-            <p class="text-gray-300 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
-                I'm open to senior backend engineering roles, technical leadership positions, and consulting
-                opportunities. Let's discuss how I can contribute to your team's success.
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto section-offset">
+            <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+            <p class="text-gray-300 mb-8 max-w-2xl">
+                I'm open to backend engineering roles and consulting work. If you're building something
+                interesting and need someone who can actually ship code, let's talk.
             </p>
-
-            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+            <div class="flex flex-wrap gap-4">
                 <a href="mailto:baqueroglenncarlo@gmail.com"
-                    class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full font-semibold hover:shadow-2xl hover:shadow-purple-500/50 hover:scale-105 transition-all">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    Get In Touch
+                    class="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-medium transition-colors">
+                    Send an Email
                 </a>
                 <a href="https://drive.google.com/file/d/16DQNR6iv7maEB2d9wdMiOYKq4Z3Wc3R5/view?usp=sharing"
                     target="_blank"
-                    class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-purple-500 rounded-full font-semibold hover:bg-purple-500/10 hover:scale-105 transition-all">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
+                    class="px-6 py-3 border border-purple-500 hover:bg-purple-500/10 rounded-lg font-medium transition-colors">
                     Download Resume
                 </a>
             </div>
@@ -589,5 +379,5 @@
 
     <script src="./js/script.js"></script>
 </body>
-</html>
 
+</html>
